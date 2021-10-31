@@ -1,6 +1,6 @@
 {
   "name": "svelte-radio-checkbox-z",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Svelte UI Check/Radio [RadioGroup, Checkbox(s)]. Custom (test-svelte)",
   "svelte": "dist/index.js",
   "module": "dist/index.mjs",

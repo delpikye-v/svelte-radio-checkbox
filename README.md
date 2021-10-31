@@ -29,23 +29,22 @@ import RadioCheckBox from "svelte-radio-checkbox-z";
     // let selected = ['Radio']  // radio || checkbox
     let selected = 'Radio'
 	let options = [
-		'Radio',
-        'Radio2',
-        { label: 'Radio5', value: 'object', disabled: true },
-        { label: 'Radio6', value: 'object1', disabled: true, className:"abcd", labelClassName:"addd" },
-        // ....
+                'Radio',
+                'Radio2',
+                { label: 'Radio5', value: 'object', disabled: true },
+                { label: 'Radio6', value: 'object1', disabled: true, className: "abcd", labelClassName: "addd" },
+                // .... more
 	]
 
 	const setSelectedValue = ({ detail }) => {
-		selected = detail
+            selected = detail
 	}
 
-    // html
-    <SimpleGroupCheck bind:value={selected} bind:options={options} on:change={setSelectedValue}
-	/> // default => style html
+    // default => style html
+    <RadioCheckBox bind:value={selected} bind:options={options} on:change={setSelectedValue}/>
 
     // theme custom
-    <SimpleGroupCheck
+    <RadioCheckBox
 		bind:value={selected}
 		bind:options={options}
 		on:change={setSelectedValue}
@@ -58,7 +57,7 @@ import RadioCheckBox from "svelte-radio-checkbox-z";
         more prop... =>
         theme='in' (see props) =>  theme display
         selectColor='anyColor' => color when selected (label, checkbox)
-        tickColor='anyColor' => tick color (only for theme: x/tick)
+        tickColor='anyColor' => tick color (only for theme: 'x../tick..')
         unSelectColor='anyColor' => color when no selected
         className = 'className'
         groupName = 'groupName' => default random unique
@@ -140,7 +139,7 @@ color when unchecked. Default <span style="color: #cbd1d8;">[#cbd1d8]</span>
 
 
 #### tickColor (`String`)
-Use when `theme` type = `tick` || `x`
+Use when `theme` type = `tick..` || `x..`
 
 `Color of tick when check.`
 <small>see demo</small>
