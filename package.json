@@ -1,6 +1,6 @@
 {
   "name": "svelte-radio-checkbox-z",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Svelte UI Check/Radio [RadioGroup, Checkbox(s)]. Custom (test-svelte)",
   "svelte": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,10 +24,14 @@
   "author": "Delpi.Kye",
   "keywords": [
     "svelte",
+    "svelte-components",
     "svelte-radio",
     "svelte-checkbox",
-    "svelte-ui",
+    "svelte-radio-checkbox",
+    "svelte-checkbox-radio",
     "svelte-radio-group",
+    "radio-checkbox",
+    "svelte-ui",
     "ui-radio",
     "ui-checkbox",
     "custom-radio",
